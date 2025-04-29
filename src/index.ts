@@ -140,7 +140,7 @@ const createEventWizard = new Scenes.WizardScene<MyContext>(
 
     await ctx.reply(
       `✅ Подію збережено!\n\n` +
-      `🔗 <b>Google Calendar</b>: <a href="${gcLink}">Додати в календар</a> \n\n
+      `🔗 <b>Google Calendar</b>: <a href="${gcLink}">Додати в календар ${title}</a> \n\n
       /addevent - Сворити наступну пдію`,
       { parse_mode: 'HTML', ...Markup.removeKeyboard() }
     );
